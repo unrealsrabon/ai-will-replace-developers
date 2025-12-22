@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Auditer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="nav-items">
+        <button class="nav-btn active" data-view="dashboard" title="Dashboard">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </button>
+        <button class="nav-btn" data-view="findings" title="Findings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <span id="findingsBadge" class="badge hidden">0</span>
+        </button>
+        <button class="nav-btn" data-view="recon" title="Recon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="nav-btn" data-view="export" title="Export">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </button>
+      </div>
+      <div class="nav-footer">
+        <button class="nav-btn" data-view="settings" title="Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Dashboard View -->
+      <section id="dashboard" class="view active">
+        <div class="view-header">
+          <h1>Dashboard</h1>
+          <div class="header-actions">
+            <button id="refreshBtn" class="icon-btn" title="Refresh">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="metrics">
+          <div class="metric-card risk" title="Overall security risk level">
+            <div class="metric-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="metric-info">
+              <span class="metric-label">Risk Score</span>
+              <div class="metric-score">
+                <span id="riskScore" class="metric-value">0</span>
+                <span class="metric-max">/100</span>
+              </div>
+              <span id="riskLevel" class="risk-level low">Low Risk</span>
+            </div>
+            <div id="riskIndicator" class="risk-indicator safe"></div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon orange">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+            </div>
+            <div class="metric-info">
+              <span class="metric-label">Findings</span>
+              <span id="totalFindings" class="metric-value">0</span>
+            </div>
+          </div>
+          <div class="metric-card" title="Security health based on passed checks">
+            <div class="metric-icon green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="metric-info">
+              <span class="metric-label">Health</span>
+              <span id="confidence" class="metric-value">0%</span>
+              <span id="healthGrade" class="health-grade">A</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="severity-breakdown">
+          <h3>Severity Breakdown</h3>
+          <div class="severity-bars">
+            <div class="severity-row">
+              <span class="sev-label high">High</span>
+              <div class="sev-bar"><div id="highBar" class="sev-fill high" style="width:0%"></div></div>
+              <span id="highCount" class="sev-count">0</span>
+            </div>
+            <div class="severity-row">
+              <span class="sev-label med">Medium</span>
+              <div class="sev-bar"><div id="medBar" class="sev-fill med" style="width:0%"></div></div>
+              <span id="medCount" class="sev-count">0</span>
+            </div>
+            <div class="severity-row">
+              <span class="sev-label low">Low</span>
+              <div class="sev-bar"><div id="lowBar" class="sev-fill low" style="width:0%"></div></div>
+              <span id="lowCount" class="sev-count">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quick-actions">
+          <h3>Quick Actions</h3>
+          <div class="action-grid">
+            <button id="copyReport" class="action-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              <span>Copy Report</span>
+            </button>
+            <button id="scanAgain" class="action-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+              <span>Rescan</span>
+            </button>
+            <button id="viewAll" class="action-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span>All Findings</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="scan-info">
+          <h3>Scan Info</h3>
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="info-label">URL</span>
+              <span id="scanUrl" class="info-value">-</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Last Scan</span>
+              <span id="lastScan" class="info-value">-</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Technologies</span>
+              <div id="techList" class="tech-badges"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Findings View -->
+      <section id="findings" class="view">
+        <div class="view-header">
+          <h1>Findings</h1>
+          <div class="header-actions">
+            <div class="search-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input id="searchInput" type="text" placeholder="Search findings..." />
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-group">
+            <label class="filter-chip high"><input type="checkbox" id="fltHigh" checked><span>High</span></label>
+            <label class="filter-chip med"><input type="checkbox" id="fltMed" checked><span>Medium</span></label>
+            <label class="filter-chip low"><input type="checkbox" id="fltLow" checked><span>Low</span></label>
+            <label class="filter-chip info"><input type="checkbox" id="fltInfo"><span>Info</span></label>
+          </div>
+          <div class="filter-group cats">
+            <button class="cat-btn active" data-cat="all">All</button>
+            <button class="cat-btn" data-cat="apikey">API Keys</button>
+            <button class="cat-btn" data-cat="vuln">Libraries</button>
+            <button class="cat-btn" data-cat="form">Forms</button>
+            <button class="cat-btn" data-cat="mixed">Mixed</button>
+            <button class="cat-btn" data-cat="path">Paths</button>
+            <button class="cat-btn" data-cat="hdr">Headers</button>
+            <button class="cat-btn" data-cat="cookie">Cookies</button>
+            <button class="cat-btn" data-cat="storage">Storage</button>
+          </div>
+        </div>
+
+        <div id="findingsList" class="findings-list"></div>
+      </section>
+
+      <!-- Recon View -->
+      <section id="recon" class="view">
+        <div class="view-header">
+          <h1>Recon</h1>
+        </div>
+        <div class="recon-cards">
+          <div class="recon-card">
+            <div class="recon-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>robots.txt</span>
+            </div>
+            <pre id="robotsContent" class="recon-content">Not fetched</pre>
+          </div>
+          <div class="recon-card">
+            <div class="recon-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 3H3v7h18V3zM21 14H3v7h18v-7z"/></svg>
+              <span>sitemap.xml</span>
+            </div>
+            <pre id="sitemapContent" class="recon-content">Not fetched</pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- Export View -->
+      <section id="export" class="view">
+        <div class="view-header">
+          <h1>Export Report</h1>
+        </div>
+        <div class="export-options">
+          <button id="exportJson" class="export-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <div class="export-info">
+              <span class="export-title">JSON</span>
+              <span class="export-desc">Raw data export</span>
+            </div>
+          </button>
+          <button id="exportMd" class="export-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <div class="export-info">
+              <span class="export-title">Markdown</span>
+              <span class="export-desc">Documentation format</span>
+            </div>
+          </button>
+          <button id="exportPdf" class="export-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2h12a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2z"/><path d="M8 10h8"/><path d="M8 14h8"/><path d="M8 18h4"/></svg>
+            <div class="export-info">
+              <span class="export-title">Print / PDF</span>
+              <span class="export-desc">Print-ready report</span>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <!-- Settings View -->
+      <section id="settings" class="view">
+        <div class="view-header">
+          <h1>Settings</h1>
+        </div>
+        <div class="settings-list">
+          <div class="setting-item">
+            <div class="setting-info">
+              <span class="setting-title">Auto-scan on page load</span>
+              <span class="setting-desc">Automatically scan pages when opened</span>
+            </div>
+            <label class="toggle"><input type="checkbox" id="autoScan" checked><span class="slider"></span></label>
+          </div>
+          <div class="setting-item">
+            <div class="setting-info">
+              <span class="setting-title">Show notifications</span>
+              <span class="setting-desc">Display badge when findings detected</span>
+            </div>
+            <label class="toggle"><input type="checkbox" id="showNotifs" checked><span class="slider"></span></label>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

@@ -44,17 +44,19 @@ No, it's pro-reality. Developers are talented people, but pretending AI can't do
 
 ### What AI do you use?
 
-I use whatever AI tools are available and effective—Claude, GPT-4, Copilot, and others. The point isn't which AI, it's that AI in general can do this work.
+> I use whatever AI tools are available and effective—Claude, GPT-4, Copilot, and others. The point isn't which AI, it's that AI in general can do this work.
 
 ---
 
 ### How long does it take to build a project?
 
-Depends on complexity. A simple Chrome extension might take an hour. A more complex web app might take a few hours across multiple sessions. The point is: it's fast and it works.
+> Depends on complexity. A simple Chrome extension might take an hour. A more complex web app might take a few hours across multiple sessions. The point is: **it's fast and it works.**
+
+---
 
 ### Can I see the prompts you used?
 
-Some projects include prompt examples in their repositories. But honestly, the prompts aren't magic—they're just clear descriptions of what I want built.
+> Some projects include prompt examples in their repositories. But honestly, the prompts aren't magic—they're just clear descriptions of what I want built.
 
 ---
 
@@ -86,19 +88,19 @@ I'm the project manager and quality control. I:
 
 ### If AI is so good, why do you need to be involved at all?
 
-Because AI still needs direction. It's like hiring a really talented developer who can code anything but needs a project spec. I provide the spec, the AI provides the implementation.
+> Because AI still needs direction. It's like hiring a really talented developer who can code anything but needs a project spec. I provide the spec, the AI provides the implementation.
 
 ---
 
 ### Doesn't debugging and refining count as development work?
 
-No. Debugging means I tell the AI "this button doesn't work" or "this feature crashes when X happens." The AI then figures out the code fix. I'm doing user testing, not development.
+> No. Debugging means I tell the AI "this button doesn't work" or "this feature crashes when X happens." The AI then figures out the code fix. I'm doing user testing, not development.
 
 ---
 
 ### What happens when AI can't do something?
 
-Hasn't happened yet for the projects I've attempted. If it does, I'll document it transparently.
+> Hasn't happened yet for the projects I've attempted. If it does, I'll document it transparently.
 
 ---
 
@@ -122,19 +124,19 @@ Based on what I've done so far:
 
 ### What about really complex stuff like operating systems or game engines?
 
-I'm focused on practical, real-world applications that businesses and users actually need. Not theoretical edge cases. The challenge is about replacing developers in 90% of common scenarios, not 100% of all possible scenarios.
+> I'm focused on practical, real-world applications that businesses and users actually need. Not theoretical edge cases. The challenge is about replacing developers in 90% of common scenarios, not 100% of all possible scenarios.
 
 ---
 
 ### Can AI handle databases, authentication, APIs, etc.?
 
-Yes. I've had AI build projects with all of these. It handles database schemas, authentication flows, API integrations, and more.
+> Yes. I've had AI build projects with all of these. It handles database schemas, authentication flows, API integrations, and more.
 
 ---
 
 ### What about security and best practices?
 
-AI actually tends to follow best practices pretty well—often better than junior or mid-level developers who might take shortcuts. I review security-sensitive features, but the AI implements secure patterns.
+> AI actually tends to follow best practices pretty well—often better than junior or mid-level developers who might take shortcuts. I review security-sensitive features, but the AI implements secure patterns.
 
 ---
 
@@ -142,19 +144,19 @@ AI actually tends to follow best practices pretty well—often better than junio
 
 ### Can I contribute to these projects?
 
-These projects are meant to be AI-only to prove the point. However, if you find bugs, you can open issues and I'll have the AI fix them.
+> These projects are meant to be AI-only to prove the point. However, if you find bugs, you can open issues and I'll have the AI fix them.
 
 ---
 
 ### Can I request a project or feature?
 
-Sure! Open an issue in this repository describing what you want. If it's interesting and proves a point about AI capabilities, I might build it.
+> Sure! Open an issue in this repository describing what you want. If it's interesting and proves a point about AI capabilities, I might build it.
 
 ---
 
 ### Can you build something custom for me?
 
-Yes. If you need a tool, extension, or application built, contact me on LinkedIn. Let's discuss your requirements and see what AI can do for you—probably faster and cheaper than traditional development.
+> Yes. If you need a tool, extension, or application built, contact me on LinkedIn. Let's discuss your requirements and see what AI can do for you—probably faster and cheaper than traditional development.
 
 <div align="center">
 
@@ -166,7 +168,7 @@ Yes. If you need a tool, extension, or application built, contact me on LinkedIn
 
 ### Can I hire you as a developer?
 
-I'm not a developer. I'm someone who knows how to get AI to develop things. But yes, if you need something built, reach out.
+> I'm not a developer. I'm someone who knows how to get AI to develop things. But yes, if you need something built, reach out.
 
 ---
 
@@ -180,31 +182,31 @@ I'm not a developer. I'm someone who knows how to get AI to develop things. But 
 
 ### Won't this put developers out of work?
 
-Technology always displaces some jobs while creating others. Developers will evolve—maybe into AI prompt engineers, quality reviewers, or system architects. But pretending AI isn't capable doesn't stop progress.
+> Technology always displaces some jobs while creating others. Developers will evolve—maybe into AI prompt engineers, quality reviewers, or system architects. But pretending AI isn't capable doesn't stop progress.
 
 ---
 
 ### What about creativity and problem-solving?
 
-I provide the creative direction. The AI solves the technical problems. It's a partnership, but the coding part? That's entirely the AI.
+> I provide the creative direction. The AI solves the technical problems. It's a partnership, but the coding part? That's entirely the AI.
 
 ---
 
 ### Isn't this just glorified code generation?
 
-Call it what you want. If it works, ships, and solves real problems, does the label matter?
+> Call it what you want. If it works, ships, and solves real problems, does the label matter?
 
 ---
 
 ### What's the future you see?
 
-A future where anyone with an idea can build software without learning to code. Where AI handles implementation and humans handle vision and strategy. Where software development is democratized.
+> A future where anyone with an idea can build software without learning to code. Where AI handles implementation and humans handle vision and strategy. Where software development is democratized.
 
 ---
 
 ### Are you saying developers are obsolete?
 
-Not yet, but the trajectory is clear. In 5-10 years? Most standard development work will be AI-driven. Developers who adapt will thrive. Those who deny it will struggle.
+> Not yet, but the trajectory is clear. In 5-10 years? Most standard development work will be AI-driven. Developers who adapt will thrive. Those who deny it will struggle.
 
 ---
 
@@ -212,19 +214,19 @@ Not yet, but the trajectory is clear. In 5-10 years? Most standard development w
 
 ### Can I fork these projects?
 
-Most projects are open-source (check individual licenses). Fork away. Build on them. Improve them. Just remember: they were built by AI, not traditional development.
+> Most projects are open-source (check individual licenses). Fork away. Build on them. Improve them. Just remember: they were built by AI, not traditional development.
 
 ---
 
 ### How do I know you're not lying about using AI?
 
-You don't, I guess. But what would I gain from lying? The point is to demonstrate AI capabilities, and every project here is proof. Check the code quality, the commit messages, the approach—it's all AI-generated patterns.
+> You don't, I guess. But what would I gain from lying? The point is to demonstrate AI capabilities, and every project here is proof. Check the code quality, the commit messages, the approach—it's all AI-generated patterns.
 
 ---
 
 ### This seems too good to be true.
 
-Then test it yourself. Pick any of the projects. Review the code. Try to break it. See if it works. The proof is in the repositories.
+> Then test it yourself. Pick any of the projects. Review the code. Try to break it. See if it works. The proof is in the repositories.
 
 ---
 

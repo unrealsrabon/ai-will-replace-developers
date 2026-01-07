@@ -18,7 +18,7 @@ This isn't just another organization with grand claims. This is a live, public c
 
 ---
 
-## 🎯 🎯 Why This Exists
+## Why This Exists
 
 Because people keep saying "AI can't do X" or "AI will never replace Y." Well, I'm here to prove them wrong. Project by project. Tool by tool.
 

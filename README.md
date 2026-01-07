@@ -18,21 +18,21 @@ This isn't just another organization with grand claims. This is a live, public c
 
 ---
 
-## ▶ Why This Exists
+## <img src="https://api.iconify.design/material-symbols:target.svg" width="24" height="24" style="vertical-align: middle;"/> Why This Exists
 
 Because people keep saying "AI can't do X" or "AI will never replace Y." Well, I'm here to prove them wrong. Project by project. Tool by tool.
 
 ### Every repository under this organization is proof that AI can:
 
-▸ Build production-ready applications  
-▸ Create complex Chrome extensions  
-▸ Develop full websites and web apps  
-▸ Handle advanced logic and integrations  
-▸ Debug and refine its own code  
+◆ Build production-ready applications  
+◆ Create complex Chrome extensions  
+◆ Develop full websites and web apps  
+◆ Handle advanced logic and integrations  
+◆ Debug and refine its own code  
 
 ---
 
-## ► The Challenge
+## <img src="https://api.iconify.design/material-symbols:emoji-events.svg" width="24" height="24" style="vertical-align: middle;"/> The Challenge
 
 I'm challenging the notion that developers are irreplaceable. Not because I hate developers (I don't), but because I believe in being real about where technology is heading.
 
@@ -40,7 +40,7 @@ I'm challenging the notion that developers are irreplaceable. Not because I hate
 
 ---
 
-## ► How to Explore
+## <img src="https://api.iconify.design/material-symbols:explore.svg" width="24" height="24" style="vertical-align: middle;"/> How to Explore
 
 Want to see the actual projects? Check out all the repositories here:
 
@@ -54,7 +54,7 @@ Want to see the actual projects? Check out all the repositories here:
 
 ---
 
-## ► Rules of Engagement
+## <img src="https://api.iconify.design/material-symbols:rule.svg" width="24" height="24" style="vertical-align: middle;"/> Rules of Engagement
 
 Before you think I'm taking shortcuts, here are the strict rules I follow:
 
@@ -68,7 +68,7 @@ Before you think I'm taking shortcuts, here are the strict rules I follow:
 
 ---
 
-## ► Questions?
+## <img src="https://api.iconify.design/material-symbols:help.svg" width="24" height="24" style="vertical-align: middle;"/> Questions?
 
 Got questions about how this works, what AI I use, or why I'm doing this?
 
@@ -80,7 +80,7 @@ Got questions about how this works, what AI I use, or why I'm doing this?
 
 ---
 
-## ► The Manifesto
+## <img src="https://api.iconify.design/material-symbols:article.svg" width="24" height="24" style="vertical-align: middle;"/> The Manifesto
 
 Want to understand the philosophy behind this challenge?
 
@@ -92,7 +92,7 @@ Want to understand the philosophy behind this challenge?
 
 ---
 
-## ► Need Something Custom?
+## <img src="https://api.iconify.design/material-symbols:build.svg" width="24" height="24" style="vertical-align: middle;"/> Need Something Custom?
 
 If you need a custom tool, extension, or application built by AI (because why would you pay 10x more for a human developer when AI can do it?), reach out to me:
 
@@ -106,13 +106,13 @@ If you need a custom tool, extension, or application built by AI (because why wo
 
 ---
 
-## ► Final Notes
+## <img src="https://api.iconify.design/material-symbols:sticky-note-2.svg" width="24" height="24" style="vertical-align: middle;"/> Final Notes
 
-### ▸ A Note to Developers
+### ◆ A Note to Developers
 
 > This isn't personal. This is just reality catching up with us. The sooner we accept it, the better we can adapt.
 
-### ▸ A Note to Everyone Else
+### ◆ A Note to Everyone Else
 
 > You don't need to hire expensive developers anymore for most projects. AI can handle it. This organization is proof.
 

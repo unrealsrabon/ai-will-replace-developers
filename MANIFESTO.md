@@ -8,7 +8,7 @@
 
 </div>
 
-## ► The Challenge
+## <img src="https://api.iconify.design/material-symbols:flag.svg" width="24" height="24" style="vertical-align: middle;"/> The Challenge
 
 > **Here's what I'm claiming:** AI can replace developers for the vast majority of practical software development work.
 
@@ -16,7 +16,9 @@ Not in the future. Not "someday." Right now. Today.
 
 Every project in this organization proves it. Each repository represents something that would have required hiring a developer—or being one—just a couple of years ago. Now? It takes some clear prompts and an AI that knows how to code.
 
-## Why This Matters
+---
+
+## <img src="https://api.iconify.design/material-symbols:lightbulb.svg" width="24" height="24" style="vertical-align: middle;"/> Why This Matters
 
 We're living in a moment of transition, and most people don't realize how fast it's happening.
 
@@ -26,28 +28,28 @@ Businesses are paying thousands of dollars for work that AI can do in hours for 
 
 ---
 
-## ► What I'm Proving
+## <img src="https://api.iconify.design/material-symbols:verified.svg" width="24" height="24" style="vertical-align: middle;"/> What I'm Proving
 
 I'm proving that:
 
 **1. AI can write production-quality code**  
-   → Not just snippets or examples, but complete, working applications.
+   ➜ Not just snippets or examples, but complete, working applications.
 
 **2. AI can handle complexity**  
-   → Authentication, databases, APIs, state management, complex logic—all of it.
+   ➜ Authentication, databases, APIs, state management, complex logic—all of it.
 
 **3. AI can debug itself**  
-   → When something breaks, I describe the problem and the AI fixes it. No manual code editing required.
+   ➜ When something breaks, I describe the problem and the AI fixes it. No manual code editing required.
 
 **4. AI can work across technologies**  
-   → Frontend, backend, extensions, scripts, automation—pick your stack, AI can build in it.
+   ➜ Frontend, backend, extensions, scripts, automation—pick your stack, AI can build in it.
 
 **5. The barrier to building software is collapsing**  
-   → You don't need a CS degree or years of experience. You need clarity about what you want built.
+   ➜ You don't need a CS degree or years of experience. You need clarity about what you want built.
 
 ---
 
-## ► What I'm NOT Saying
+## <img src="https://api.iconify.design/material-symbols:cancel.svg" width="24" height="24" style="vertical-align: middle;"/> What I'm NOT Saying
 
 Let me be clear about what this challenge isn't:
 
@@ -61,7 +63,7 @@ Let me be clear about what this challenge isn't:
 
 ---
 
-## ► What I AM Saying
+## <img src="https://api.iconify.design/material-symbols:check-circle.svg" width="24" height="24" style="vertical-align: middle;"/> What I AM Saying
 
 I'm saying the era of needing human developers for most common software projects is ending.
 
@@ -73,7 +75,7 @@ I'm saying that adaptation beats denial.
 
 ---
 
-## ► The Rules
+## <img src="https://api.iconify.design/material-symbols:gavel.svg" width="24" height="24" style="vertical-align: middle;"/> The Rules
 
 This isn't just talk. I follow strict rules to keep this challenge legitimate:
 
@@ -89,7 +91,7 @@ See the full rules in [RULES.md](RULES.md).
 
 ---
 
-## ► The Philosophy
+## <img src="https://api.iconify.design/material-symbols:school.svg" width="24" height="24" style="vertical-align: middle;"/> The Philosophy
 
 Technology has always displaced old ways of doing things.
 
@@ -110,7 +112,7 @@ The tools weren't perfect replacements, but they were good enough for 90% of use
 
 ---
 
-## ► The Invitation
+## <img src="https://api.iconify.design/material-symbols:group-add.svg" width="24" height="24" style="vertical-align: middle;"/> The Invitation
 
 I'm not asking you to just believe me. I'm asking you to look at the evidence.
 
@@ -122,7 +124,7 @@ And more importantly: what does that mean for how you approach software developm
 
 ---
 
-## ► The Future
+## <img src="https://api.iconify.design/material-symbols:rocket-launch.svg" width="24" height="24" style="vertical-align: middle;"/> The Future
 
 Here's what I see coming:
 
@@ -141,7 +143,7 @@ Teaching people to code as a primary skill will seem as outdated as teaching eve
 
 ---
 
-## ► The Bottom Line
+## <img src="https://api.iconify.design/material-symbols:fact-check.svg" width="24" height="24" style="vertical-align: middle;"/> The Bottom Line
 
 This organization isn't here to make friends. It's here to demonstrate truth.
 
